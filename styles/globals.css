@@ -13,24 +13,20 @@
     --background-end-rgb: 0, 0, 0;
 
     --primary-glow: radial-gradient(rgba(1, 65, 255, 0.4), rgba(1, 65, 255, 0));
-    --secondary-glow: linear-gradient(
-      to bottom right,
-      rgba(1, 65, 255, 0),
-      rgba(1, 65, 255, 0),
-      rgba(1, 65, 255, 0.3)
-    );
+    --secondary-glow: linear-gradient(to bottom right,
+        rgba(1, 65, 255, 0),
+        rgba(1, 65, 255, 0),
+        rgba(1, 65, 255, 0.3));
 
     --tile-start-rgb: 2, 13, 46;
     --tile-end-rgb: 2, 5, 19;
-    --tile-border: conic-gradient(
-      #ffffff80,
-      #ffffff40,
-      #ffffff30,
-      #ffffff20,
-      #ffffff10,
-      #ffffff10,
-      #ffffff80
-    );
+    --tile-border: conic-gradient(#ffffff80,
+        #ffffff40,
+        #ffffff30,
+        #ffffff20,
+        #ffffff10,
+        #ffffff10,
+        #ffffff80);
 
     --callout-rgb: 20, 20, 20;
     --callout-border-rgb: 108, 108, 108;
@@ -42,7 +38,8 @@
 * {
   box-sizing: border-box;
   padding: 0;
-  margin: 0;
+  margin: 0 auto;
+  max-width: 1400px;
 }
 
 html,
@@ -53,12 +50,9 @@ body {
 
 body {
   color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
+  background: linear-gradient(to bottom,
       transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+      rgb(var(--background-end-rgb))) rgb(var(--background-start-rgb));
 }
 
 a {
@@ -72,28 +66,203 @@ a {
   }
 }
 
-header{
+header {
   padding: 2rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
-.logo{
+.background {
+  background-image: url("/images/IMG-20230122-WA0020.jpg");
+  background-size: cover;
+  width: 80vw;
+  height: 70vh;
+}
 
+.background {
+  background-image: url("/images/IMG-20230122-WA0020.jpg");
+  background-size: cover;
+  width: 80vw;
+  height: 70vh;
+}
+
+.imagem-principal {
+  position: relative;
+  text-align: center;
+  height: 70vh;
+}
+
+.imagem-principal h1,
+h3 {
+  color: white;
+}
+
+.imagem-principal h1 {
+  position: absolute;
+  width: 100%;
+  font-size: 4.5rem;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.imagem-principal h3 {
+  position: absolute;
+  font-size: 3rem;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .menu img {
   width: 2rem;
   height: 2rem;
+  color: red;
 }
 
-.count-regressive-days {
+.stopwatch {
+  width: 100vw;
+  text-align: center;
   display: flex;
-  justify-content: space-around;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
+.regressive-count-text {
+  margin-bottom: 2rem;
+}
+
+.count-regressive-days,
 .time {
+  width: 70vw;
   display: flex;
-  justify-content: space-around;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0.5rem 0;
+}
+
+.time h3:nth-child(3) {
+  margin-right: -2.3rem;
+}
+
+.time h3:nth-child(2) {
+  margin-left: 2rem;
+}
+
+.time h3:nth-child(1) {
+  margin-left: -0.5rem;
+}
+
+section.noivos {
+  margin: 1rem;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.aee {
+  margin-top: 2rem;
+  width: 60vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.eea {
+  border-radius: 50%;
+}
+
+.text-about {
+  margin-top: 2rem;
+  width: 80vw;
+  text-align: center;
+}
+
+section.padrinhos {
+  margin: 1rem;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+section.padrinhos h2 {
+  text-align: center;
+  width: 100%;
+}
+
+.padrinhos-wrap {
+  width: 80vw;
+  margin: 2rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.padrinhos-wrap h3 {
+  color: initial
+}
+
+section.present-list {
+  margin: 1rem;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.present-list h1,
+a {
+  margin-bottom: 1rem;
+}
+
+.money {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.money div {
+  text-align: center;
+  padding: 1rem;
+}
+
+.money div h2 {
+  margin-bottom: 1.2rem;
+}
+
+.money div h3 {
+  margin-top: 1.3rem;
+  margin-bottom: 1.2rem;
+  color: initial;
+
+}
+
+.money-image {
+  border-radius: 40%;
+}
+
+.pix {
+  margin-top: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+
+section.cerimonia {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+}
+
+.cerimonia h1 {
+  padding: 1rem 0;
+}
+
+.cerimonia p {
+  padding: 1rem 0;
 }
