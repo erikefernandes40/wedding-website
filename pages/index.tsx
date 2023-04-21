@@ -4,6 +4,7 @@ import Header from './header'
 import Background from './backgound'
 import Stopwatch from './stopwatch'
 import BrideAndGroom from './brideAndGroom'
+import GodParents from './godParents'
 export default function Home() {
   return (
     <>
@@ -11,84 +12,10 @@ export default function Home() {
     <Background/>
     <Stopwatch/>
     <BrideAndGroom/>
+    <GodParents/>
 
 
 
-      <section className='padrinhos'>
-        <h2>Os Padrinhos</h2>
-
-        <div className='padrinhos-wrap'>
-          <h3>Erick</h3>
-          <Image
-            src="/images/IMG-20230122-WA0020.jpg"
-            alt="Foto de Alana e Erick"
-            width={300}
-            height={300}
-            className='eea'
-          />
-          <Image
-            src="/images/IMG-20230122-WA0020.jpg"
-            alt="Foto de Alana e Erick"
-            width={300}
-            height={300}
-            className='eea'
-          />
-          <h3>Alana</h3>
-        </div>
-        <div className='padrinhos-wrap'>
-          <h3>Erick</h3>
-          <Image
-            src="/images/IMG-20230122-WA0020.jpg"
-            alt="Foto de Alana e Erick"
-            width={300}
-            height={300}
-            className='eea'
-          />
-          <Image
-            src="/images/IMG-20230122-WA0020.jpg"
-            alt="Foto de Alana e Erick"
-            width={300}
-            height={300}
-            className='eea'
-          />
-          <h3>Alana</h3>
-        </div>      <div className='padrinhos-wrap'>
-          <h3>Erick</h3>
-          <Image
-            src="/images/IMG-20230122-WA0020.jpg"
-            alt="Foto de Alana e Erick"
-            width={300}
-            height={300}
-            className='eea'
-          />
-          <Image
-            src="/images/IMG-20230122-WA0020.jpg"
-            alt="Foto de Alana e Erick"
-            width={300}
-            height={300}
-            className='eea'
-          />
-          <h3>Alana</h3>
-        </div>
-        <div className='padrinhos-wrap'>
-          <h3>Erick</h3>
-          <Image
-            src="/images/IMG-20230122-WA0020.jpg"
-            alt="Foto de Alana e Erick"
-            width={300}
-            height={300}
-            className='eea'
-          />
-          <Image
-            src="/images/IMG-20230122-WA0020.jpg"
-            alt="Foto de Alana e Erick"
-            width={300}
-            height={300}
-            className='eea'
-          />
-          <h3>Alana</h3>
-        </div>
-      </section>
 
       <section className='present-list'>
         <h1>Lista de presentes</h1>
