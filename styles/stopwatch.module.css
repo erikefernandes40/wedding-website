@@ -1,0 +1,42 @@
+.stopwatch {
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.stopwatch h3 {
+  color: initial;
+  font-family: 'Quicksand';
+
+}
+
+.regressive-count-text {
+  margin-bottom: 2rem;
+}
+
+.countRegressiveDays,
+.time {
+  width: 70vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0.5rem 0;
+}
+
+.regressiveCountDays h3, .time h3 {
+  color: #6fa4c4
+}
+
+.time h3:nth-child(3) {
+  margin-right: -2.3rem;
+}
+
+.time h3:nth-child(2) {
+  margin-left: 2rem;
+}
+
+.time h3:nth-child(1) {
+  margin-left: -0.5rem;
+}
