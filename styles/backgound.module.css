@@ -1,0 +1,40 @@
+.background {
+  max-width: 80vw;
+  margin: 4rem auto;
+  background-image: url("/images/IMG-20230122-WA0020.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin-bottom: 2rem;
+}
+
+.imagemPrincipal {
+  position: relative;
+  text-align: center;
+  height: 70vh;
+}
+
+.imagemPrincipal h1, .imagemPrincipal h3 {
+  color: white;
+}
+
+.imagemPrincipal h1 {
+  position: absolute;
+  width: 100%;
+  font-size: 5.5rem;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: 'Dancing Script';
+
+}
+
+.imagemPrincipal h3 {
+  position: absolute;
+  font-size: 3rem;
+  bottom: -3rem;
+  left: 50%;
+  transform: translateX(-50%);
+  font-family: 'Quicksand';
+
+}
