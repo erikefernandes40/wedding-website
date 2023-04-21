@@ -1,0 +1,30 @@
+section.godParents {
+  margin: 1rem;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+section.godParents h2 {
+  text-align: center;
+  width: 100%;
+  font-family: 'Dancing Script';
+}
+
+.godParentsWrap {
+  width: 60vw;
+  margin: 2rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.godParentsWrap h3 {
+  font-family: 'Dancing Script';
+}
+
+.eea {
+  border-radius: 50%;
+}
+
