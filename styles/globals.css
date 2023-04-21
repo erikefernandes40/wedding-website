@@ -1,160 +1,3 @@
-:root {
-  --max-width: 1100px;
-  --font-mono: ui-monospace, Menlo, Monaco, 'Cascadia Mono', 'Segoe UI Mono',
-    'Roboto Mono', 'Oxygen Mono', 'Ubuntu Monospace', 'Source Code Pro',
-    'Fira Mono', 'Droid Sans Mono', 'Courier New', monospace;
-
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-
-    --primary-glow: radial-gradient(rgba(1, 65, 255, 0.4), rgba(1, 65, 255, 0));
-    --secondary-glow: linear-gradient(to bottom right,
-        rgba(1, 65, 255, 0),
-        rgba(1, 65, 255, 0),
-        rgba(1, 65, 255, 0.3));
-
-    --tile-start-rgb: 2, 13, 46;
-    --tile-end-rgb: 2, 5, 19;
-    --tile-border: conic-gradient(#ffffff80,
-        #ffffff40,
-        #ffffff30,
-        #ffffff20,
-        #ffffff10,
-        #ffffff10,
-        #ffffff80);
-
-    --callout-rgb: 20, 20, 20;
-    --callout-border-rgb: 108, 108, 108;
-    --card-rgb: 100, 100, 100;
-    --card-border-rgb: 200, 200, 200;
-  }
-}
-
-* {
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0 auto;
-  max-width: 1400px;
-}
-
-html,
-body {
-  max-width: 100vw;
-  overflow-x: hidden;
-}
-
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))) rgb(var(--background-start-rgb));
-}
-
-a {
-  color: inherit;
-  text-decoration: none;
-}
-
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
-}
-
-header {
-  padding: 2rem;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.background {
-  background-image: url("/images/IMG-20230122-WA0020.jpg");
-  background-size: cover;
-  width: 80vw;
-  height: 70vh;
-}
-
-.background {
-  background-image: url("/images/IMG-20230122-WA0020.jpg");
-  background-size: cover;
-  width: 80vw;
-  height: 70vh;
-}
-
-.imagem-principal {
-  position: relative;
-  text-align: center;
-  height: 70vh;
-}
-
-.imagem-principal h1,
-h3 {
-  color: white;
-}
-
-.imagem-principal h1 {
-  position: absolute;
-  width: 100%;
-  font-size: 4.5rem;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
-.imagem-principal h3 {
-  position: absolute;
-  font-size: 3rem;
-  bottom: 0;
-  left: 50%;
-  transform: translateX(-50%);
-}
-
-.menu img {
-  width: 2rem;
-  height: 2rem;
-  color: red;
-}
-
-.stopwatch {
-  width: 100vw;
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-
-.regressive-count-text {
-  margin-bottom: 2rem;
-}
-
-.count-regressive-days,
-.time {
-  width: 70vw;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  margin: 0.5rem 0;
-}
-
-.time h3:nth-child(3) {
-  margin-right: -2.3rem;
-}
-
-.time h3:nth-child(2) {
-  margin-left: 2rem;
-}
-
-.time h3:nth-child(1) {
-  margin-left: -0.5rem;
-}
-
 section.noivos {
   margin: 1rem;
   width: 100vw;
@@ -265,4 +108,28 @@ section.cerimonia {
 
 .cerimonia p {
   padding: 1rem 0;
+}
+
+
+@font-face {
+  font-family: 'Quicksand';
+  src: url('/fonts/Quicksand-Regular.ttf') format('truetype'),
+    url('/fonts/Quicksand-Bold.ttf'),
+    url('/fonts/Quicksand-Medium.ttf'),
+    url('/fonts/Quicksand-Light.ttf'),
+    url('/fonts/Quicksand-SemiBold.ttf');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Dancing Script';
+  src: url('/fonts/DancingScript-Regular.ttf') format('truetype'),
+    url('/fonts/DancingScript-Bold.ttf') format('truetype'),
+    url('/fonts/DancingScript-Medium.ttf') format('truetype'),
+    url('/fonts/DancingScript-SemiBold.ttf') format('truetype');
+    font-weight: normal;
+  font-style: normal;
+  font-display: swap;
 }
