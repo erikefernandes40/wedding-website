@@ -3,36 +3,16 @@ import Formulario from './form'
 import Header from './header'
 import Background from './backgound'
 import Stopwatch from './stopwatch'
+import BrideAndGroom from './brideAndGroom'
 export default function Home() {
   return (
     <>
-
     <Header />
-
     <Background/>
-
     <Stopwatch/>
+    <BrideAndGroom/>
 
-      <section className="noivos">
-        <div className="title-noivos">
-          <h2>Os Noivos</h2>
-        </div>
-        <div className="aee">
-          <h1>Erick</h1>
-          <Image
-            src="/images/IMG-20230122-WA0020.jpg"
-            alt="Foto de Alana e Erick"
-            width={300}
-            height={300}
-            className='eea'
-          />
-          <h1>Alana</h1>
-        </div>
-        <div className='text-about'>
-          <p>Criamos esse site para compartilhar com vocês os detalhes do nosso casamento. Estamos muito felizes e contamos com a presença de todos no nosso grande dia!
-          </p>
-        </div>
-      </section>
+
 
       <section className='padrinhos'>
         <h2>Os Padrinhos</h2>
