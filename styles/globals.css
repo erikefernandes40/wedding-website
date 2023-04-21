@@ -1,30 +1,3 @@
-
-
-section.padrinhos {
-  margin: 1rem;
-  width: 100vw;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-section.padrinhos h2 {
-  text-align: center;
-  width: 100%;
-}
-
-.padrinhos-wrap {
-  width: 80vw;
-  margin: 2rem 0;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.padrinhos-wrap h3 {
-  color: initial
-}
-
 section.present-list {
   margin: 1rem;
   width: 100vw;
@@ -112,4 +85,8 @@ section.cerimonia {
 
 * {
   font-family: 'Quicksand';
+}
+
+body {
+  background-color: rgba(191, 215, 233, 0.3)
 }
