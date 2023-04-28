@@ -1,47 +1,4 @@
-section.present-list {
-  margin: 1rem;
-  width: 100vw;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
 
-.present-list h1,
-a {
-  margin-bottom: 1rem;
-}
-
-.money {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-}
-
-.money div {
-  text-align: center;
-  padding: 1rem;
-}
-
-.money div h2 {
-  margin-bottom: 1.2rem;
-}
-
-.money div h3 {
-  margin-top: 1.3rem;
-  margin-bottom: 1.2rem;
-  color: initial;
-
-}
-
-.money-image {
-  border-radius: 40%;
-}
-
-.pix {
-  margin-top: 2rem;
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
-}
 
 
 section.cerimonia {
