@@ -7,21 +7,21 @@ const Stopwatch = () => {
   const [diffDays, setDiffDays] = useState(0);
   const [diffHours, setDiffHours] = useState(0);
   const [diffMinutes, setDiffMinutes] = useState(0);
-  const [diffSeconds, setDiffSeconds] = useState(0)
+  const [diffSeconds, setDiffSeconds] = useState(0);
 
   useEffect(() => {
     const interval = setInterval(() => {
       const today = new Date();
-      const diffTime = Math.abs(targetDate - today);
+      const diffTime = Math.abs(Number(targetDate) - Number(today));
       const newDiffDays = Math.floor(diffTime / (1000 * 60 * 60 * 24));
       const newDiffHours = Math.floor((diffTime % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
       const newDiffMinutes = Math.floor((diffTime % (1000 * 60 * 60)) / (1000 * 60));
       const newDiffSeconds = Math.floor((diffTime % (1000 * 60)) / 1000);
 
-      setDiffDays(newDiffDays);
-      setDiffHours(newDiffHours);
-      setDiffMinutes(newDiffMinutes);
-      setDiffSeconds(newDiffSeconds)
+      setDiffDays(Number(newDiffDays));
+      setDiffHours(Number(newDiffHours));
+      setDiffMinutes(Number(newDiffMinutes));
+      setDiffSeconds(Number(newDiffSeconds));
     }, 1000);
 
     return () => clearInterval(interval);
