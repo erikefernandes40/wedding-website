@@ -1,5 +1,7 @@
 import styles from '../styles/stopwatch.module.css'
 import { useState, useEffect } from 'react';
+import Image from 'next/image'
+
 
 const Stopwatch = () => {
   const targetDate = new Date('2023-10-14T00:00:00');
@@ -30,20 +32,41 @@ const Stopwatch = () => {
   return (
     <section className={styles.stopwatch}>
       <div className={styles.regressiveCountDays}>
-        <h3>CONTAGEM REGRESSIVA PARA O GRANDE DIA</h3>
+        <h3>14 DE OUTROBRO DE 2023</h3>
+        <h2>
+          Itajubá MG
+        </h2>
+        <h2>
+          Igreja Presbiteriana do Bairro Vila Rubens, às 17h.
+        </h2>
       </div>
-      <div className={styles.countRegressiveDays}>
-        <h3>{diffDays}</h3>
-        <h3>{diffHours}</h3>
-        <h3>{diffMinutes}</h3>
-        <h3>{diffSeconds}</h3>
+      <div className={styles.main}>
+        <div className={styles.regressive}>
+          <h3>{diffDays}</h3>
+          <h3>DIAS</h3>
+        </div>
+        <div className={styles.regressive}>
+          <h3>{diffHours}</h3>
+          <h3>HORAS</h3>
+        </div>
+        <div className={styles.regressive}>
+          <h3>{diffMinutes}</h3>
+          <h3>MIN</h3>
+        </div>
+        <div className={styles.regressive}>
+          <h3>{diffSeconds}</h3>
+          <h3>SEG</h3>
+        </div>
       </div>
-      <div className={styles.time}>
-        <h3>DIAS</h3>
-        <h3>HORAS</h3>
-        <h3>MINUTOS</h3>
-        <h3>SEGUNDOS</h3>
+      <div className={styles.greenFlower}>
+      <Image
+          src="/images/green-flower.png"
+          alt="Foto de Alana e Erick"
+          width={600}
+          height={200}
+        />
       </div>
+
     </section>
   );
 };
