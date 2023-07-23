@@ -14,42 +14,52 @@ const Formulario = () => {
   });
 
   return (
-    <form className={styles.formulario} onSubmit={formik.handleSubmit}>
-      <div>
-      <label htmlFor="nome">Nome</label>
-      <input
-        id="nome"
-        name="nome"
-        type="text"
-        onChange={formik.handleChange}
-        value={formik.values.nome}
-      />
-      </div>
+    <section className={styles.form}>
+      <form className={styles.formulario} onSubmit={formik.handleSubmit}>
+        <h2>Deixe seu recado para os noivos</h2>
 
-      <div>
-      <label htmlFor="email">Email</label>
-      <input
-        id="email"
-        name="email"
-        type="email"
-        onChange={formik.handleChange}
-        value={formik.values.email}
-      />
-      </div>
+        <div>
+          <label htmlFor="nome"></label>
+          <input
+            id="nome"
+            name="nome"
+            type="text"
+            onChange={formik.handleChange}
+            value={formik.values.nome}
+            placeholder='Nome'
+          />
+        </div>
 
-    <div>
-    <label htmlFor="mensagem">Mensagem</label>
-      <textarea
-        id="mensagem"
-        name="mensagem"
-        onChange={formik.handleChange}
-        value={formik.values.mensagem}
-      />
-    </div>
+        <div>
+          <label htmlFor="email"></label>
+          <input
+            id="email"
+            name="email"
+            type="email"
+            onChange={formik.handleChange}
+            value={formik.values.email}
+            placeholder='Email'
+            
+          />
+        </div>
+
+        <div>
+          <label htmlFor="mensagem"></label>
+          <textarea
+            id="mensagem"
+            name="mensagem"
+            onChange={formik.handleChange}
+            value={formik.values.mensagem}
+            placeholder='Mensagem'
+          />
+        </div>
 
 
-      <button type="submit">Enviar</button>
-    </form>
+        <button type="submit">Enviar</button>
+      </form>
+    </section>
+
+
   );
 };
 
