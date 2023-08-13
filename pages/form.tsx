@@ -1,5 +1,7 @@
 import { useFormik } from 'formik';
 import styles from 'styles/form.module.css';
+import Image from 'next/image'
+
 
 const Formulario = () => {
   const formik = useFormik({
@@ -57,6 +59,16 @@ const Formulario = () => {
 
         <button type="submit">Enviar</button>
       </form>
+
+      <div className={styles.greenFlower}>
+      <Image
+          src="/images/green-flower.png"
+          alt="Foto de Alana e Erick"
+          width={600}
+          height={200}
+          className={styles.flower}
+        />
+      </div>
     </section>
 
 
