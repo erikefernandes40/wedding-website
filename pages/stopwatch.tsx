@@ -64,6 +64,7 @@ const Stopwatch = () => {
           alt="Foto de Alana e Erick"
           width={600}
           height={200}
+          className={styles.flower}
         />
       </div>
 
