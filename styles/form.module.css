@@ -1,17 +1,23 @@
+section.form {
+  text-align: center;
+  margin: 0 auto;
+  max-width: 700px;
+  padding: 1rem;
+  margin-bottom: 4rem;
+  box-shadow: 0px 32px 151px 15px rgba(133, 129, 129, 0.7);
+  border: 1px solid rgba(107, 106, 106, 0.7);;
+}
 .formulario {
   padding: 1.4rem;
   border-radius: 5px;
-  display: flex;
-  flex-direction: column;
+}
+.formulario h2 {
+  padding-bottom: 2rem;
 }
 
 .formulario div {
   display: flex;
   align-items: center;
-}
-
-.formulario div label {
-  padding: 1rem;
 }
 
 .formulario label {
@@ -22,21 +28,53 @@
 .formulario input,
 .formulario textarea {
   width: 100%;
-  padding: 10px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
+  padding: 0.7rem;
   margin-bottom: 20px;
+  outline: 0;
+  border: none;
+  border-bottom: 1px solid rgb(223, 215, 215);
+}
+
+.formulario textarea {
+  padding-bottom: 4rem;
 }
 
 .formulario button {
-  background-color: #0070f3;
-  color: #fff;
-  padding: 10px 20px;
-  border: none;
+  background-color: white;
+  color: black;
+  border: 1px solid rgb(223, 215, 215);;
   border-radius: 5px;
   cursor: pointer;
+  margin: 0 auto;
+  margin-top: 3rem;
+  font-size: 1rem;
+  padding: 0.7rem;
+  font-weight: 600;
+  width: 50%;
 }
 
 .formulario button:hover {
-  background-color: #0054a4;
+  background-color: rgb(75, 180, 221);
+  color: #fff;
+  transition: 0.5s ease-in;
 }
+
+.greenFlower {
+  margin-bottom: -6.5rem;
+}
+
+@media (max-width: 667px) {
+section.form {
+  margin: 1rem;
+}
+
+.flower{
+  width: 300px;
+  height: 100px;
+}
+
+.greenFlower {
+  margin-bottom: -4rem;
+}
+}
+

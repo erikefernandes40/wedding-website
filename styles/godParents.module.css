@@ -1,5 +1,5 @@
 section.godParents {
-  margin: 1rem;
+  max-width: 1200px;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
@@ -8,23 +8,49 @@ section.godParents {
 
 section.godParents h2 {
   text-align: center;
-  width: 100%;
   font-family: 'Dancing Script';
+  padding-top: 2rem;
+  font-size: 2rem;
+}
+
+.mother {
+  width: 100%;
 }
 
 .godParentsWrap {
-  width: 60vw;
-  margin: 2rem 0;
+  width: 100%;
+  margin: 2rem auto;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 
 .godParentsWrap h3 {
   font-family: 'Dancing Script';
+  font-size: 2rem;
 }
 
 .eea {
   border-radius: 50%;
+  margin: 0 2rem;
+}
+
+@media (max-width: 1024px) {
+  .eea   {
+    width: 200px;
+    height: 200px;
+  }
+}
+
+@media (max-width: 667px) {
+ .godParentsWrap {
+  flex-direction: column;
+ }
+
+ .eea {
+  width: 250px;
+  height: 250px;
+  margin: 1rem 0;
+ }
 }
 

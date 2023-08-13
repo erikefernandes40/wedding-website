@@ -1,22 +1,3 @@
-
-
-
-section.cerimonia {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 1rem;
-}
-
-.cerimonia h1 {
-  padding: 1rem 0;
-}
-
-.cerimonia p {
-  padding: 1rem 0;
-}
-
-
 @font-face {
   font-family: 'Quicksand';
   src: url('/fonts/Quicksand-Regular.ttf') format('truetype'),
@@ -42,8 +23,8 @@ section.cerimonia {
 
 * {
   font-family: 'Quicksand';
-}
-
-body {
-  background-color: rgba(191, 215, 233, 0.3)
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  max-width: 100vw;
 }

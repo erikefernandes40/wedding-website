@@ -1,17 +1,18 @@
 section.noivos {
-  margin: 1rem;
-  width: 100vw;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-top: 6rem;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
 .aee {
+  width: 100%;
   margin-top: 2rem;
-  width: 60vw;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 
 .eea {
@@ -24,6 +25,32 @@ section.noivos {
 
 .textAbout {
   margin-top: 2rem;
-  width: 80vw;
-  text-align: center;
+  max-width: 100vw;
+  text-align: justify;
+}
+
+.textAbout p {
+  font-size: 1.3rem;
+  padding: 1rem;
+}
+
+.names {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+}
+
+.noivos h1 {
+  font-size: 3rem;
+}
+
+@media (max-width: 1024px) {
+
+}
+
+@media (max-width: 667px) {
+  .aee {
+    flex-direction: column;
+  }
 }

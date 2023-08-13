@@ -1,11 +1,10 @@
 .header {
-  max-width: 80vw;
+  max-width: 100vw;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  margin: 0 auto;
+  padding: 1rem 2rem;
+  box-shadow: 0px 0.5px 0.5px rgba(223, 215, 215, 0.7);
   position: fixed;
   top: 0;
   left: 0;
@@ -15,7 +14,7 @@
 
 
 .logo a {
-  color: #333;
+  color: white;
   font-size: 1.5rem;
   font-weight: bold;
   text-decoration: none;
@@ -26,6 +25,7 @@
   display: block;
   width: 2rem;
   height: 2rem;
+  background-color: transparent;
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
@@ -48,7 +48,7 @@
   top: 100%;
   left: 0;
   width: 100%;
-  background-color: #fff;
+  background-color: none;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   z-index: 998;
 }
