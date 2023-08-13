@@ -7,7 +7,7 @@ const GodParents = () => {
     <section className={styles.godParents}>
       <h2>Os Padrinhos</h2>
 
-      <div className={styles.mother}>
+    <div className={styles.mother}>
       <div className={styles.godParentsWrap}>
         <h3>Erick</h3>
         <Image
@@ -80,7 +80,7 @@ const GodParents = () => {
         />
         <h3>Alana</h3>
       </div>
-      </div>
+    </div>
 
       
     </section>

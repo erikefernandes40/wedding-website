@@ -10,6 +10,7 @@ const PresentList = () => {
       <div className={styles.money}>
         <div>
           <h2>Toma aqui uns 50 reais</h2>
+          <a href="https://www.vakinha.com.br/vaquinha/casamento-erick-e-alana">
           <Image
             src="/images/naiara-azevedo.jpg"
             alt="Foto de Alana e Erick"
@@ -18,6 +19,7 @@ const PresentList = () => {
             className={styles.moneyImage}
           />
           <h3>R$ 50,00</h3>
+          </a>
         </div>
         <div>
           <h2>Vaquinha</h2>
@@ -29,11 +31,12 @@ const PresentList = () => {
               height={300}
               className={styles.moneyImage}
             />
-          </a>
           <h3>R$ 30,00</h3>
+          </a>
         </div>
         <div>
           <h2>Roupa para a noiva usar na lua de mel</h2>
+          <a href="https://www.vakinha.com.br/vaquinha/casamento-erick-e-alana">
           <Image
             src="/images/langerie.webp"
             alt="Foto de Alana e Erick"
@@ -42,9 +45,11 @@ const PresentList = () => {
             className={styles.moneyImage}
           />
           <h3>R$ 100,00</h3>
+          </a>
         </div>
         <div>
           <h2>Só para não dizer que não dei nada</h2>
+          <a href="https://www.vakinha.com.br/vaquinha/casamento-erick-e-alana">
           <Image
             src="/images/20-reais.jpg"
             alt="Foto de Alana e Erick"
@@ -53,9 +58,11 @@ const PresentList = () => {
             className={styles.moneyImage}
           />
           <h3>R$ 20,00</h3>
+          </a>
         </div>
         <div>
           <h2>Rolo de massa para a noiva usar quando necessário</h2>
+          <a href="https://www.vakinha.com.br/vaquinha/casamento-erick-e-alana">
           <Image
             src="/images/rolo-de-massa.jpg"
             alt="Foto de Alana e Erick"
@@ -64,9 +71,11 @@ const PresentList = () => {
             className={styles.moneyImage}
           />
           <h3>R$ 30,00</h3>
+          </a>
         </div>
         <div>
           <h2>Ajude os noivos em sua viajem de lua de mel</h2>
+          <a href="https://www.vakinha.com.br/vaquinha/casamento-erick-e-alana">
           <Image
             src="/images/recem-casados.jpg"
             alt="Foto de Alana e Erick"
@@ -75,6 +84,7 @@ const PresentList = () => {
             className={styles.moneyImage}
           />
           <h3>R$ 100,00</h3>
+          </a>
         </div>
       </div>
 
@@ -87,13 +97,14 @@ const PresentList = () => {
             alt="Foto de Alana e Erick"
             width={300}
             height={300}
+            className={styles.qrCodePix}
           />
         </div>
         <div className={styles.qrCode}>
           <h2>Escaneie a imagem acima </h2>
           <h2> ou </h2>
           <h2> copie a chave pix abaixo</h2>
-          <h1>u3b39ucn9u3bc9u3ncu939ucn0i3ncu</h1>
+          <h1>29a81fbc-8bca-4f49-94d5-eb3a59e3a2d7</h1>
         </div>
       </div>
     </section>
