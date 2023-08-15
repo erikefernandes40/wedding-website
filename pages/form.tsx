@@ -1,9 +1,10 @@
 import { useFormik } from 'formik';
+import { useState, useEffect } from 'react';
 import styles from 'styles/form.module.css';
 import Image from 'next/image'
 
-
 const Formulario = () => {
+  const [isModalOpen, setIsModalOpen] = useState(false);
   const formik = useFormik({
     initialValues: {
       nome: '',
@@ -12,8 +13,19 @@ const Formulario = () => {
     },
     onSubmit: (values) => {
       console.log(values);
+      setIsModalOpen(true);
     }
   });
+
+  const closeModal = () => {
+    setIsModalOpen(false);
+  };
+
+  useEffect(() => {
+    if (!isModalOpen) {
+      formik.resetForm();
+    }
+  }, [isModalOpen]);
 
   return (
     <section className={styles.form}>
@@ -41,7 +53,6 @@ const Formulario = () => {
             onChange={formik.handleChange}
             value={formik.values.email}
             placeholder='Email'
-            
           />
         </div>
 
@@ -56,12 +67,11 @@ const Formulario = () => {
           />
         </div>
 
-
         <button type="submit">Enviar</button>
       </form>
 
       <div className={styles.greenFlower}>
-      <Image
+        <Image
           src="/images/green-flower.png"
           alt="Foto de Alana e Erick"
           width={600}
@@ -69,9 +79,16 @@ const Formulario = () => {
           className={styles.flower}
         />
       </div>
+
+      {isModalOpen && (
+        <div className={styles.modal}>
+          <div className={styles.modalContent}>
+            <p>Formulário enviado com sucesso!</p>
+            <button onClick={closeModal}>Fechar</button>
+          </div>
+        </div>
+      )}
     </section>
-
-
   );
 };
 
