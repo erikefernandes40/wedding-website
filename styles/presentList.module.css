@@ -6,9 +6,27 @@ section.presentList {
   align-items: center;
 }
 
+.listaDePresentes {
+  padding: 1rem 2rem;
+  border-radius: 5px;
+  border: 1px solid rgb(223, 215, 215);
+  font-weight: 700;
+  color: black;
+}
+
+.listaDePresentes:hover {
+  background-color: rgba(137, 107, 73, 0.3);
+  transition: all 0.7s;
+}
+
+.presentList a {
+  text-decoration: none;
+}
+
 .presentList h1,
 .presentList a {
   margin-bottom: 1rem;
+  text-align: center;
 }
 
 .money {

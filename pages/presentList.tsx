@@ -5,8 +5,8 @@ import styles from '../styles/presentList.module.css'
 const PresentList = () => {
   return (
     <section className={styles.presentList}>
-      <h1>Lista de presentes</h1>
-      <a href="https://www.finalfeliz.de/alana-erickk">Clique aqui</a>
+      <h1>Para acessar nossa lista de presentes</h1>
+      <a className={styles.listaDePresentes} href="https://www.finalfeliz.de/alana-erickk">Clique aqui</a>
       <div className={styles.money}>
         <div>
           <h2>Toma aqui uns 50 reais</h2>
@@ -104,7 +104,7 @@ const PresentList = () => {
           <h2>Escaneie a imagem acima </h2>
           <h2> ou </h2>
           <h2> copie a chave pix abaixo</h2>
-          <h1>29a81fbc-8bca-4f49-94d5-eb3a59e3a2d7</h1>
+          <h1>a798c85a-e7f0-4270-b658-c49729585a78</h1>
         </div>
       </div>
     </section>

@@ -1,6 +1,4 @@
-import Image from 'next/image'
 import styles from '../styles/brideAndBroom.module.css'
-
 
 const BrideAndGroom = () => {
   return (
@@ -9,29 +7,19 @@ const BrideAndGroom = () => {
         <h1>Os Noivos</h1>
       </div>
       <div className={styles.aee}>
-        <Image
-          src="/images/IMG-20230122-WA0020.jpg"
-          alt="Foto de Alana e Erick"
-          width={300}
-          height={300}
-          className={styles.eea}
-        />
+        <img className={styles.erick} src="" alt="erick" />
         <div className={styles.names}>
         <h1>Erick</h1>
         <h1>&</h1>
         <h1>Alana</h1>
         </div>
+        <img className={styles.alana} src="" alt="Alana"/>
 
-        <Image
-          src="/images/IMG-20230122-WA0020.jpg"
-          alt="Foto de Alana e Erick"
-          width={300}
-          height={300}
-          className={styles.eea}
-        />
       </div>
       <div className={styles.textAbout}>
-        <p>Criamos esse site para compartilhar com vocês os detalhes do nosso casamento. Estamos muito felizes e contamos com a presença de todos no nosso grande dia!
+        <p>O tão esperado dia está se aproximando com toda a sua grandiosidade e encanto! <br /> <br />
+
+Nossos corações transbordam de alegria e gratidão por cada momento que trilhamos até alcançar este marco tão especial. Queremos expressar nosso profundo agradecimento, especialmente àquelas pessoas preciosas que têm preenchido nossos dias com amor e felicidade, compartilhando conosco essa jornada de emoções.
         </p>
       </div>
     </section>

@@ -1,66 +1,48 @@
-.background {
+.imagemPrincipal .imagemPrincipal2, .imagemPrincipal3 {
   width: 100vw;
   height: 100vh;
-  background-image: url("/images/imagem-principal.jpg");
-  background-size: cover;
   background-position: center;
+  background-size: cover;
   background-repeat: no-repeat;
-}
-
-.imagemPrincipal {
   position: relative;
   text-align: center;
-  height: 100vh;
+  touch-action: none
 }
 
-.imagemPrincipal h1, .imagemPrincipal h3 {
-  color: white;
+section.carousel-root {
+  min-height: 100vh;
 }
 
-.imagemPrincipal h1 {
+
+.imagemPrincipal h1, .imagemPrincipal2 h1, .imagemPrincipal3 h1 {
   position: absolute;
   width: 100vw;
-  font-size: 5.5rem;
+  font-size: 7.5rem;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   font-family: 'Dancing Script';
+  color: white;
 }
 
-.lineTop{
-  position: absolute;
-  top: 22rem;
-  left: 50%;
-  transform: translateX(-50%);
-}
-
-.lineBottom{
-  position: absolute;
-  bottom: 21rem;
-  left: 50%;
-  transform: translateX(-50%);
+@media (max-width: 1024px) {
+  .image {
+    object-position: 65%;
+  }
 }
 
 @media (max-width: 667px) {
-  .imagemPrincipal h1 {
+  .imagemPrincipal h1, .imagemPrincipal2 h1, .imagemPrincipal3 h1 {
     font-size: 3.5rem;
-    top: 50%;
   }
-  .lineTop{
-    top: 15rem;
-  }
-  
-  .lineBottom{
-    bottom: 15rem;
+
+  .imagemPrincipal2, .imagemPrincipal3 {
+    background-position: 70%;
   }
 }
 
-@media (max-width: 365px) {
-  .lineTop{
-    top: 18rem;
-  }
-  
-  .lineBottom{
-    bottom: 18rem;
+@media (max-width: 300px) {
+  .imagemPrincipal h1, .imagemPrincipal2 h1, .imagemPrincipal3 h1 {
+    font-size: 3rem;
   }
 }

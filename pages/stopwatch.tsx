@@ -32,12 +32,12 @@ const Stopwatch = () => {
   return (
     <section className={styles.stopwatch}>
       <div className={styles.regressiveCountDays}>
-        <h3>14 DE OUTROBRO DE 2023</h3>
+        <h3>14 DE OUTUBRO DE 2023</h3>
         <h2>
           Itajubá MG
         </h2>
         <h2>
-          Igreja Presbiteriana do Bairro Vila Rubens, às 17h.
+          Igreja Presbiteriana de Vila Rubens, às 17h.
         </h2>
       </div>
       <div className={styles.main}>

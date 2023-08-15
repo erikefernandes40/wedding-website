@@ -25,14 +25,128 @@ section.godParents h2 {
   justify-content: space-around;
 }
 
+.godParentsWrap img {
+  width: 300px;
+  height: 300px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 50%;
+  margin: 0 2rem;
+}
+
+.holiver {
+  background-image: url('/images/holiver.jpeg');
+  background-position: 70%;
+}
+
+.milene {
+  background-image: url('/images/milene.jfif');
+  background-position: top;
+}
+
+.thiago {
+  background-image: url('/images/thiaguinho.jfif');
+  background-position: center;
+}
+
+.sara {
+  background-image: url('/images/sara.jfif');
+  background-position: top;
+}
+
+.handerson {
+  background-image: url('/images/handerson2.jfif');
+  background-position: center;
+}
+
+.isadora {
+  background-image: url('/images/isadora.jfif');
+  background-position: center;
+}
+
+.aldenir {
+  background-image: url('/images/aldenir.jpg');
+}
+
+.jenifer {
+  background-image: url('/images/jenifer.jfif');
+  background-position: center;
+}
+
+.halisson {
+  background-image: url('/images/halisson.jfif');
+  background-position: top;
+}
+
+.vanessa {
+  background-image: url('/images/vanessa.jfif');
+  background-position: top;
+}
+
+.nicolas {
+  background-image: url('/images/nicolas.jfif');
+  background-position: top;
+}
+
+.julia {
+  background-image: url('/images/julia.jfif');
+  background-position: center;
+}
+
+.jefferson {
+  background-image: url('/images/jefferson.jfif');
+  background-position: center;
+}
+
+.anaJe {
+  background-image: url('/images/ana.jfif');
+  background-position: center;
+}
+
+.manu {
+  background-image: url('/images/manu.jfif');
+  background-position: center;
+}
+
+.ana {
+  background-image: url('/images/anaManu.jfif');
+  background-position: center;
+}
+
+.esdras {
+  background-image: url('/images/esdras.jfif');
+  background-position: top;
+}
+
+.nilza {
+  background-image: url('/images/nilza.jfif');
+  background-position: top;
+}
+
+.miguel {
+  background-image: url('/images/miguel.jfif');
+  background-position: center;
+}
+
+.drika {
+  background-image: url('/images/drika.jfif');
+  background-position: top;
+}
+
+.patrick {
+  background-image: url('/images/patrick.jfif');
+  background-position: top;
+}
+
+.barbara {
+  background-image: url('/images/barbara.jfif');
+  background-position: top;
+}
+
+
 .godParentsWrap h3 {
   font-family: 'Dancing Script';
   font-size: 2rem;
-}
-
-.eea {
-  border-radius: 50%;
-  margin: 0 2rem;
 }
 
 @media (max-width: 1024px) {
