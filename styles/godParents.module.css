@@ -160,6 +160,9 @@ section.godParents h2 {
  .godParentsWrap {
   flex-direction: column;
  }
+ .godParentsWrap img{
+  margin: 1rem 0;
+ }
 
  .eea {
   width: 250px;
