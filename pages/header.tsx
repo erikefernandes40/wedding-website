@@ -27,27 +27,22 @@ const Header = () => {
       <nav className={`${styles.menu} ${isOpen ? styles.open : ''}`}>
         <ul>
           <li>
-            <Link href="/">
+            <Link className={styles.link} href="/">
               Os Noivos
             </Link>
           </li>
           <li>
-            <Link href="/">
+            <Link className={styles.link} href="/">
               Os Padrinhos
             </Link>
           </li>
           <li>
-            <Link href="/">
+            <Link className={styles.link} href="/">
               Lista de Presentes
             </Link>
           </li>
           <li>
-            <Link href="/">
-              Cerimônia
-            </Link>
-          </li>
-          <li>
-            <Link href="/contato">
+            <Link className={styles.link} href="/contato">
               Deixe seu Recado
             </Link>
           </li>
