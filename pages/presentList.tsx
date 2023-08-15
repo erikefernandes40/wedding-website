@@ -89,7 +89,7 @@ const PresentList = () => {
       </div>
 
       <div>
-        <h2 className={styles.value}>Gostaria de contibuir com outro valor? </h2>
+        <h2 className={styles.value}>Gostaria de contribuir com outro valor? </h2>
         <div className={styles.pix}>
           <h2>Pix</h2>
           <Image
