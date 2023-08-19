@@ -1,6 +1,7 @@
-import Link from 'next/link';
 import { useState } from 'react';
 import styles from 'styles/header.module.css';
+import { Link as ScrollLink, animateScroll as scroll } from 'react-scroll';
+
 
 
 const Header = () => {
@@ -10,12 +11,14 @@ const Header = () => {
     setIsOpen(!isOpen);
   };
 
+  const handleCloseMenu = () => {
+    setIsOpen(false);
+  };
+
   return (
     <header className={styles.header}>
       <div className={styles.logo}>
-        <Link href="/">
-          A&E
-        </Link>
+        A&E
       </div>
 
       <button className={styles.menuIcon} onClick={handleToggleMenu}>
@@ -27,24 +30,51 @@ const Header = () => {
       <nav className={`${styles.menu} ${isOpen ? styles.open : ''}`}>
         <ul>
           <li>
-            <Link className={styles.link} href="/">
+            <ScrollLink
+              className={styles.link}
+              to="os-noivos"
+              smooth={true}
+              duration={500}
+              onClick={handleCloseMenu}
+            >
               Os Noivos
-            </Link>
+            </ScrollLink>
           </li>
           <li>
-            <Link className={styles.link} href="/">
+            <ScrollLink
+              className={styles.link}
+              to="os-padrinhos"
+              smooth={true}
+              duration={500}
+              onClick={handleCloseMenu}
+
+            >
               Os Padrinhos
-            </Link>
+            </ScrollLink>
           </li>
           <li>
-            <Link className={styles.link} href="/">
+            <ScrollLink
+              className={styles.link}
+              to="lista-de-presentes"
+              smooth={true}
+              duration={500}
+              onClick={handleCloseMenu}
+
+            >
               Lista de Presentes
-            </Link>
+            </ScrollLink>
           </li>
           <li>
-            <Link className={styles.link} href="/contato">
+            <ScrollLink
+              className={styles.link}
+              to="deixe-seu-recado"
+              smooth={true}
+              duration={500}
+              onClick={handleCloseMenu}
+
+            >
               Deixe seu Recado
-            </Link>
+            </ScrollLink>
           </li>
         </ul>
       </nav>

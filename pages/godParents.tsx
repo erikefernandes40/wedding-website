@@ -1,10 +1,9 @@
-import Image from 'next/image'
 import styles from '../styles/godParents.module.css'
 
 
 const GodParents = () => {
   return (
-    <section className={styles.godParents}>
+    <section id='os-padrinhos' className={styles.godParents}>
       <h2>Os Padrinhos</h2>
 
     <div className={styles.mother}>

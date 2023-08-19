@@ -28,7 +28,7 @@ const Formulario = () => {
   }, [isModalOpen]);
 
   return (
-    <section className={styles.form}>
+    <section id='deixe-seu-recado' className={styles.form}>
       <form className={styles.formulario} onSubmit={formik.handleSubmit}>
         <h2>Deixe seu recado para os noivos</h2>
 

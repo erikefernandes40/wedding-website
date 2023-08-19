@@ -1,8 +1,9 @@
 import styles from '../styles/brideAndBroom.module.css'
 
+
 const BrideAndGroom = () => {
   return (
-    <section className={styles.noivos}>
+    <section id='os-noivos' className={styles.noivos}>
       <div className={styles.titleNoivos}>
         <h1>Os Noivos</h1>
       </div>

@@ -21,6 +21,10 @@
   font-display: swap;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 * {
   font-family: 'Quicksand';
   padding: 0;

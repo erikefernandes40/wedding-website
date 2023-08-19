@@ -4,7 +4,7 @@ import styles from '../styles/presentList.module.css'
 
 const PresentList = () => {
   return (
-    <section className={styles.presentList}>
+    <section id='lista-de-presentes' className={styles.presentList}>
       <h1>Para acessar nossa lista de presentes</h1>
       <a className={styles.listaDePresentes} href="https://www.finalfeliz.de/alana-erickk">Clique aqui</a>
       <div className={styles.money}>
