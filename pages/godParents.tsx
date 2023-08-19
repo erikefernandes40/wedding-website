@@ -7,6 +7,12 @@ const GodParents = () => {
       <h2>Os Padrinhos</h2>
 
     <div className={styles.mother}>
+    <div className={styles.godParentsWrap}>
+        <h3>Halisson</h3>
+        <img className={styles.halisson} src="" alt="Halisson"/>
+        <img className={styles.vanessa} src="" alt="Vanessa"/>
+        <h3>Vanessa</h3>
+      </div>
       <div className={styles.godParentsWrap}>
         <h3>Holiver</h3>
         <img className={styles.holiver} src="" alt="Holiver"/>
@@ -30,12 +36,6 @@ const GodParents = () => {
         <img className={styles.aldenir} src="" alt="Aldenir"/>
         <img className={styles.jenifer} src="" alt="Jennifer"/>
         <h3>Jennifer</h3>
-      </div>
-      <div className={styles.godParentsWrap}>
-        <h3>Halisson</h3>
-        <img className={styles.halisson} src="" alt="Halisson"/>
-        <img className={styles.vanessa} src="" alt="Vanessa"/>
-        <h3>Vanessa</h3>
       </div>
       <div className={styles.godParentsWrap}>
         <h3>Nicolas</h3>
