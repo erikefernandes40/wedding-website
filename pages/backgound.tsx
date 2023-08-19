@@ -19,6 +19,7 @@ const Background = () => {
                   objectFit: 'cover',
                 }}
                 loading='eager'
+                
               />
             <h1>Erick & Alana</h1>
           </div>
