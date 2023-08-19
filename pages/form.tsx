@@ -11,8 +11,25 @@ const Formulario = () => {
       email: '',
       mensagem: ''
     },
-    onSubmit: (values) => {
-      console.log(values);
+    onSubmit: async (values) => {
+        const GZAPPY_URL = "https://api.gzappy.com/v1/message/send-message"
+        const message = `nome: ${values.nome},\n email: ${values.email},\n mensagem: ${values.mensagem}`
+        const phone1 = "5535991444332"
+
+        await fetch(GZAPPY_URL, {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+            'user_token_id': "d14609f2-3ca0-4395-afc8-a318c396e21c"
+          },
+          body: JSON.stringify({
+            instance_id: "0PKE44V60SGC41Z6DM04RS8F",
+            instance_token: "2bd1964a-cd3a-40ba-8e66-430a74821063",
+            message: [message],
+            phone: phone1, 
+          })
+        })
+
       setIsModalOpen(true);
     }
   });
@@ -83,7 +100,7 @@ const Formulario = () => {
       {isModalOpen && (
         <div className={styles.modal}>
           <div className={styles.modalContent}>
-            <p>Formulário enviado com sucesso!</p>
+            <p>Sua mensagem foi enviada com sucesso!</p>
             <button onClick={closeModal}>Fechar</button>
           </div>
         </div>
