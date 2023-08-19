@@ -7,7 +7,7 @@ import Image from 'next/image';
 const Background = () => {
   return (
 <section className={styles.section}>
-      <Carousel swipeable={false} autoPlay interval={3000} infiniteLoop>
+      <Carousel swipeable={false} autoPlay interval={3000} infiniteLoop showThumbs={false}>
         <div>
         <div className={styles.imagemPrincipal}>
           <Image
