@@ -10,7 +10,7 @@ export default function App({ Component, pageProps }: AppProps) {
     // Simular um carregamento demorado (por exemplo, usando setTimeout)
     setTimeout(() => {
       setLoading(false);
-    }, 4000); // Defina o tempo que achar apropriado
+    }, 6000); // Defina o tempo que achar apropriado
   }, []);
 
   return (
