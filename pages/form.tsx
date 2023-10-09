@@ -23,8 +23,8 @@ const Formulario = () => {
             'user_token_id': "d14609f2-3ca0-4395-afc8-a318c396e21c"
           },
           body: JSON.stringify({
-            instance_id: "0PKE44V60SGC41Z6DM04RS8F",
-            instance_token: "2bd1964a-cd3a-40ba-8e66-430a74821063",
+            instance_id: "TBMRSX4JCCL9TYJ3IGZRTVC8",
+            instance_token: "1a9ea97b-40e9-4b95-9377-af96d0ea6e5c",
             message: [message],
             phone: phone1, 
           })
