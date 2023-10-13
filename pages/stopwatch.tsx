@@ -4,7 +4,7 @@ import Image from 'next/image'
 
 
 const Stopwatch = () => {
-  const targetDate = new Date('2023-10-14T00:00:00');
+  const targetDate = new Date('2023-10-14T17:00:00');
 
   const [diffDays, setDiffDays] = useState(0);
   const [diffHours, setDiffHours] = useState(0);
