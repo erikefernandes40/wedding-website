@@ -24,6 +24,11 @@ const Stopwatch = () => {
       setDiffHours(Number(newDiffHours));
       setDiffMinutes(Number(newDiffMinutes));
       setDiffSeconds(Number(newDiffSeconds));
+
+      if (diffTime <= 0) {
+        clearInterval(interval);
+      }
+      
     }, 1000);
 
     return () => clearInterval(interval);
