@@ -44,6 +44,7 @@ const Stopwatch = () => {
         <h2>
           Igreja Presbiteriana de Vila Rubens, às 17h.
         </h2>
+        <h3>Dias Casados</h3>
       </div>
       <div className={styles.main}>
         <div className={styles.regressive}>
